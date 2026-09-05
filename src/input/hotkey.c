@@ -74,6 +74,15 @@ static void set_definition_for_action(hotkey_action action, hotkey_definition *d
         case HOTKEY_ROTATE_MAP_RIGHT:
             def->action = &data.hotkey_state.rotate_map_right;
             break;
+        case HOTKEY_ZOOM_IN:
+            def->action = &data.hotkey_state.zoom_in;
+            break;
+        case HOTKEY_ZOOM_OUT:
+            def->action = &data.hotkey_state.zoom_out;
+            break;
+        case HOTKEY_RESET_ZOOM:
+            def->action = &data.hotkey_state.reset_zoom;
+            break;
         case HOTKEY_SHOW_ADVISOR_LABOR:
             def->action = &data.hotkey_state.show_advisor;
             def->value = ADVISOR_LABOR;
