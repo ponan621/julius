@@ -14,6 +14,9 @@ typedef struct {
     int increase_game_speed;
     int rotate_map_left;
     int rotate_map_right;
+    int zoom_in;
+    int zoom_out;
+    int reset_zoom;
     int show_advisor;
     int show_overlay;
     int toggle_overlay;

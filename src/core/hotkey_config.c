@@ -26,6 +26,9 @@ static const char *ini_keys[] = {
     "decrease_game_speed",
     "rotate_map_left",
     "rotate_map_right",
+    "zoom_in",
+    "zoom_out",
+    "reset_zoom",
     "build_clear",
     "build_house",
     "build_road",
@@ -127,6 +130,9 @@ static void init_defaults(void)
     set_mapping(KEY_TYPE_PAGEUP, KEY_MOD_NONE, HOTKEY_INCREASE_GAME_SPEED);
     set_mapping(KEY_TYPE_HOME, KEY_MOD_NONE, HOTKEY_ROTATE_MAP_LEFT);
     set_mapping(KEY_TYPE_END, KEY_MOD_NONE, HOTKEY_ROTATE_MAP_RIGHT);
+    set_mapping(KEY_TYPE_KP_PLUS, KEY_MOD_NONE, HOTKEY_ZOOM_IN);
+    set_mapping(KEY_TYPE_KP_MINUS, KEY_MOD_NONE, HOTKEY_ZOOM_OUT);
+    set_mapping(KEY_TYPE_KP_MULTIPLY, KEY_MOD_NONE, HOTKEY_RESET_ZOOM);
     set_mapping(KEY_TYPE_1, KEY_MOD_NONE, HOTKEY_SHOW_ADVISOR_LABOR);
     set_mapping(KEY_TYPE_2, KEY_MOD_NONE, HOTKEY_SHOW_ADVISOR_MILITARY);
     set_mapping(KEY_TYPE_3, KEY_MOD_NONE, HOTKEY_SHOW_ADVISOR_IMPERIAL);
